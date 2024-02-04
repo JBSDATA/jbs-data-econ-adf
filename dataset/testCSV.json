@@ -1,0 +1,42 @@
+{
+	"name": "testCSV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "econ_modeling_blob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "BLS PPI - Current Year.csv",
+				"folderPath": "Extracts",
+				"container": "bls"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "SERIES_ID",
+				"type": "String"
+			},
+			{
+				"name": "SERIES_NAME",
+				"type": "String"
+			},
+			{
+				"name": "YEARMONTH",
+				"type": "String"
+			},
+			{
+				"name": "VALUE",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,19 @@
+{
+	"name": "econ_modeling_blob",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"connectionString": "DefaultEndpointsProtocol=https;AccountName=jbseconstorage117;",
+			"accountKey": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "kv_econ_modeling",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "kv-econ-modeling-blob"
+			}
+		}
+	}
+}

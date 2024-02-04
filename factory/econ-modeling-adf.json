@@ -1,0 +1,9 @@
+{
+	"name": "econ-modeling-adf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "d0d2a094-7cc8-4671-ab2e-f48017aee7e5",
+		"tenantId": "46d29aa4-d0f7-4b2e-bf84-7603036288c9"
+	}
+}
